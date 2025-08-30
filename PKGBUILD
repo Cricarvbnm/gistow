@@ -1,6 +1,6 @@
 # Maintainer: alec <alecvbnm@outlook.com>
 pkgname=gistow-git
-pkgrel=1
+pkgrel=2
 pkgver=r7.508dd7f
 pkgver() {
   cd "${srcdir}/${pkgname%-git}"
@@ -12,7 +12,7 @@ pkgver() {
 arch=(any)
 pkgdesc='Like stow, but actually git bare repositories'
 depends=(git sh)
-optdepends=('stow2gistow-git: Convert stow package to gistow package')
+optdepends=('stow2gistow: Convert stow package to gistow package')
 makedepends=(make)
 url="https://github.com/Cricarvbnm/gistow"
 license=('MIT')
