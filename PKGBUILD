@@ -1,6 +1,6 @@
 # Maintainer: alec <alecvbnm@outlook.com>
 pkgname=gistow-git
-pkgrel=2
+pkgrel=1
 pkgver=r5.e7d5cbc
 pkgver() {
   cd "${srcdir}/${pkgname%-git}"
