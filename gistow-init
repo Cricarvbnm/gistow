@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+git init --bare "$1"
+gistow "$1" config --local status.showUntrackedFiles false

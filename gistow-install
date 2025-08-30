@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+exec gistow "$1" reset --hard HEAD
