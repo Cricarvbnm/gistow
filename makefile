@@ -4,6 +4,7 @@ BINDIR := $(PREFIX)/bin
 FILES := gistow gistow-init gistow-install gistow-uninstall 
 
 install:
+	mkdir -p $(DESTDIR)$(BINDIR)/
 	install -Dm755 $(FILES) $(DESTDIR)$(BINDIR)/
 	install -Dm644 LICENSE "${DESTDIR}${PREFIX}/share/licenses/gistow/LICENSE"
 
