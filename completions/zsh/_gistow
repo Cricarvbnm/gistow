@@ -1,0 +1,7 @@
+#compdef -P gistow*
+
+_gistow() {
+  _arguments \
+    '1:package path:_files -/'
+}
+
