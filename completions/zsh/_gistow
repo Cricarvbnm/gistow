@@ -2,6 +2,8 @@
 
 _gistow() {
   _arguments \
-    '1:package path:_files -/'
+    ':package path:_files -/' \
+    ':git command' \
+    '*:file:_files -/'
 }
 
