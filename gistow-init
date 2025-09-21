@@ -1,4 +1,13 @@
 #!/usr/bin/env sh
 
-git init --bare "$1"
+init_branch="${GISTOW_INIT_BRANCH:-main}"
+empty_tag="${GISTOW_EMPTY_TAG:-empty}"
+
+git init --bare "$1" --initial-branch "${init_branch}"
+
+# Make an empty commit to make a tag
+gistow "$1" commit --allow-empty -m 'Empty for uninstallation'
+gistow "$1" tag "${empty_tag}"
+
 gistow "$1" config --local status.showUntrackedFiles false
+gistow "$1" config --local advice.detachedHead false

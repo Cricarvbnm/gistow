@@ -1,3 +1,5 @@
 #!/usr/bin/env sh
 
-exec gistow "$1" rm -r ..
+empty_tag="${GISTOW_EMPTY_TAG:-empty}"
+
+exec gistow "$1" checkout "$empty_tag"
