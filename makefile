@@ -9,7 +9,7 @@ BINDIR = $(REAL_PREFIX)/bin
 LICENSEDIR = $(REAL_PREFIX)/share/licenses/$(PKGNAME)
 ZSH_COMP_DIR = $(REAL_PREFIX)/share/zsh/site-functions
 
-BIN_FILES := gistow gistow-init gistow-install gistow-uninstall
+BIN_FILES := gistow gistow-init gistow-install gistow-uninstall gistow-tree
 LICENSE_FILES := LICENSE
 ZSH_COMP_FILES := completions/zsh/_gistow
 
