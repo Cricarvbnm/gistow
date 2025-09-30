@@ -20,6 +20,7 @@ install:
 	@install -Dm755 $(BIN_FILES) --target-directory $(BINDIR)/
 	@install -Dm644 $(LICENSE_FILES) --target-directory $(LICENSEDIR)/
 	@install -Dm644 $(ZSH_COMP_FILES) --target-directory $(ZSH_COMP_DIR)/
+	@install -Dm644 etc/profile.d/gistow.sh --target-directory $(DESTDIR)/etc/profile.d
 	@echo "Installation done"
 
 uninstall:
@@ -34,6 +35,7 @@ uninstall:
 		  rm -v $(ZSH_COMP_DIR)/$$(basename $$file); \
 	  fi; \
 	done
+	@rm $(DESTDIR)/etc/profile.d/gistow.sh
 	@[ -d $(LICENSEDIR) ] && rm -r $(LICENSEDIR)
 	@echo "Uninstallation done"
 
