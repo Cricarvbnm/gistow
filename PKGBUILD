@@ -1,7 +1,7 @@
 # Maintainer: alec <alecvbnm@outlook.com>
 pkgname=gistow-git
 pkgrel=1
-pkgver=r12.9e36232
+pkgver=r13.cca6fef
 pkgver() {
   cd "${srcdir}/${pkgname%-git}"
   ver=$(git describe --long --tags --abbrev=7 2>/dev/null | sed 's/^v//;s/-/+/g')
